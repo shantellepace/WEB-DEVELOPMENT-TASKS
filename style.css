@@ -1,0 +1,122 @@
+/* style.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.form input,
+.form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+nav {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px #11101033; 
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold; 
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.about {
+  display: flex;
+  padding: 50px;
+  gap: 20px;
+  align-items: center;
+}
+
+.about img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-text {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.work-container {
+  width: 210mm;
+  height: 297mm;
+  margin: 0 auto;
+  padding: 10mm;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background: #fff;
+
+}
+
+/* Simple responsive grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5mm;
+}
+
+/* Make each image scale inside the grid */
+.work-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.shape {
+  width: 100px;
+  height: 100px;
+  background-color: #555;
+  border-radius: 10px;
+}
